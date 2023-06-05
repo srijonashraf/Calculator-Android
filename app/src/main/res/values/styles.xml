@@ -1,0 +1,38 @@
+<resources>
+    <!-- Calculator Button Style -->
+    <style name="CalculatorButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+
+
+    </style>
+
+    <!-- Operator Button Style -->
+    <style name="OperatorButton" parent="CalculatorButton">
+        <item name="android:backgroundTint">#FF9800</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- Equal Button Style -->
+    <style name="EqualButton" parent="CalculatorButton">
+        <item name="android:backgroundTint">#9C27B0</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- Cross Button Style -->
+    <style name="CrossButton" parent="CalculatorButton">
+        <item name="android:backgroundTint">#F44336</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- Clear Button Style -->
+    <style name="ClearButton" parent="CalculatorButton">
+        <item name="android:backgroundTint">#5C5C5C</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+</resources>

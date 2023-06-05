@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Display Field -->
+    <TextView
+        android:id="@+id/displayField"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="16dp"
+        android:background="#EEEEEE"
+        android:gravity="end"
+        android:padding="10dp"
+        android:textSize="35sp"
+        tools:text="0" />
+
+    <!-- Calculator Buttons -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="5"
+            android:useDefaultMargins="true">
+
+            <!-- Row 1 -->
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/ClearButton"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/btnOneByDivide"
+                style="@style/OperatorButton"
+                android:text="1/x" />
+
+            <Button
+                android:id="@+id/btnPower"
+                style="@style/OperatorButton"
+                android:text="x^" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                style="@style/OperatorButton"
+                android:text="/" />
+
+            <!-- Row 2 -->
+            <Button
+                android:id="@+id/btn7"
+                style="@style/CalculatorButton"
+                android:text="@string/button_7" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/CalculatorButton"
+                android:text="@string/button_8" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/CalculatorButton"
+                android:text="@string/button_9" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                style="@style/OperatorButton"
+                android:text="*" />
+
+            <!-- Row 3 -->
+            <Button
+                android:id="@+id/btn4"
+                style="@style/CalculatorButton"
+                android:text="@string/button_4" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/CalculatorButton"
+                android:text="@string/button_5" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/CalculatorButton"
+                android:text="@string/button_6" />
+
+            <Button
+                android:id="@+id/btnSubtract"
+                style="@style/OperatorButton"
+                android:text="-" />
+
+            <!-- Row 4 -->
+            <Button
+                android:id="@+id/btn1"
+                style="@style/CalculatorButton"
+                android:text="@string/button_1" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/CalculatorButton"
+                android:text="@string/button_2" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/CalculatorButton"
+                android:text="@string/button_3" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                style="@style/OperatorButton"
+                android:text="+" />
+
+            <!-- Row 5 -->
+            <Button
+                android:id="@+id/btn0"
+                style="@style/CalculatorButton"
+                android:text="@string/button_0" />
+
+            <Button
+                android:id="@+id/btnDot"
+                style="@style/CalculatorButton"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btnEqual"
+                style="@style/EqualButton"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/btnCross"
+                style="@style/CrossButton"
+                android:text="X" />
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By Srijon Ashraf"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
